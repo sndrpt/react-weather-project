@@ -24,6 +24,7 @@ function App() {
           >
             open-sourced
           </a>
+          .
         </footer>
       </div>
     </div>
