@@ -3,11 +3,28 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      Weather App
-      <footer>
-        This project was created by Sandra Pytlik and is
-        <a href="">open-sourced</a>
-      </footer>
+      <div className="container">
+        Weather App
+        <footer>
+          This project was created by{" "}
+          <a
+            href="https://shimmering-basbousa-b25624.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            Sandra Pytlik
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/sndrpt/react-weather-project"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            open-sourced
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
