@@ -29,3 +29,25 @@
 .App footer a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 800px) {
+  .App {
+    background-image: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  .App footer {
+    margin-top: 70px;
+  }
+
+  body {
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("multimedia/background.jpg");
+  }
+}
