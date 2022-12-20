@@ -5,7 +5,9 @@
 .Weather .form-control {
   background: rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.5);
   caret-color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .Weather .form-control::placeholder {
@@ -14,13 +16,15 @@
 
 .Weather .btn {
   background: rgba(0, 0, 0, 0.4);
-  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.5);
   color: rgba(255, 255, 255, 0.7);
   transition: all 160ms ease-in-out;
 }
 
 .Weather .btn:hover {
   background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   color: rgba(255, 255, 255, 0.9);
 }
 
