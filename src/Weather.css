@@ -47,5 +47,16 @@
 .Weather .weather-data .temperature,
 .Weather .weather-data .unit {
   font-size: 42px;
-  font-weight: normal;
+  font-weight: 300;
+}
+
+.Weather a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.Weather a:hover {
+  text-decoration: underline;
 }

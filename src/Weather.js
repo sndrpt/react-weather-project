@@ -70,8 +70,6 @@ export default function Weather(props) {
           width="500"
           color="rgba(255, 255, 255, 0.5)"
           radius="6"
-          wrapperStyle={{}}
-          wrapperClass="loader"
           visible={true}
           ariaLabel="rings-loading"
         />
