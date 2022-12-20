@@ -40,6 +40,10 @@
   padding-left: 0;
 }
 
+.Weather canvas {
+  margin: 10px;
+}
+
 .Weather .weather-data .temperature,
 .Weather .weather-data .unit {
   font-size: 42px;
