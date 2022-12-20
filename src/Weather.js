@@ -1,11 +1,15 @@
 import React, { useState } from "react";
+import FormattedDate from "./FormattedDate";
+
 import axios from "axios";
 import "./Weather.css";
+
 import ReactAnimatedWeather from "react-animated-weather";
 import { Rings } from "react-loader-spinner";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
+
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -14,7 +18,7 @@ export default function Weather(props) {
       description: response.data.condition.description,
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
-      date: "Sunday, 18/12/2022",
+      date: new Date(response.data.time * 1000),
       iconUrl:
         "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png",
     });
@@ -40,7 +44,9 @@ export default function Weather(props) {
         <h1>{weatherData.city}</h1>
         <div className="weather-details">
           <ul className="weather-date mb-0">
-            <li className="mb-3">{weatherData.date}</li>
+            <li className="mb-3">
+              <FormattedDate date={weatherData.date} />
+            </li>
             <li>
               <img src={weatherData.iconUrl} alt={weatherData.description} />
               <ReactAnimatedWeather
