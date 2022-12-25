@@ -5,6 +5,7 @@ import axios from "axios";
 import "./Weather.css";
 
 import { Rings } from "react-loader-spinner";
+import Forecast from "./Forecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -58,7 +59,14 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <WeatherInfo data={weatherData} />
+        <div className="row">
+          <div className="col-md-7">
+            <WeatherInfo data={weatherData} />
+          </div>
+          <div className="col-md-5">
+            <Forecast />
+          </div>
+        </div>
       </div>
     );
   } else {

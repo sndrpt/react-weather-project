@@ -13,7 +13,11 @@ export default function WeatherInfo(props) {
             <FormattedDate date={props.data.date} />
           </li>
           <li>
-            <WeatherIcon code={props.data.icon} alt={props.data.description} />
+            <WeatherIcon
+              size={150}
+              code={props.data.icon}
+              alt={props.data.description}
+            />
           </li>
         </ul>
         <ul className="weather-data">
