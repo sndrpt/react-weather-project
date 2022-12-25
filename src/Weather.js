@@ -74,10 +74,10 @@ export default function Weather(props) {
     return (
       <div className="d-flex justify-content-center">
         <Rings
-          height="500"
-          width="500"
+          height="480"
+          width="480"
           color="rgba(255, 255, 255, 0.5)"
-          radius="6"
+          radius="5"
           visible={true}
           ariaLabel="rings-loading"
         />
