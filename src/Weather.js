@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
+import Forecast from "./Forecast";
 
 import axios from "axios";
 import "./Weather.css";
 
 import { Rings } from "react-loader-spinner";
-import Forecast from "./Forecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -64,7 +64,7 @@ export default function Weather(props) {
             <WeatherInfo data={weatherData} />
           </div>
           <div className="col-md-5">
-            <Forecast />
+            <Forecast data={weatherData} />
           </div>
         </div>
       </div>
